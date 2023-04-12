@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+  </head>
+
+  <style>
+    #box {
+      display: flex;
+      border: black solid;
+    }
+  </style>
+  <body>
+    <!-- ------------------HEADER------------------------------ -->
+
+    <header
+      class="bg-gradient-to-r from-green-200 to-green-500 rounded lg:w-[100%] lg:h-[125px] h-[80px] md:h-[100px]"
+    >
+      <div class="flex justify-between">
+        <img
+          class="lg:w-[7rem] lg:h-[7rem] w-[3rem] h-[5rem] object-contain border-[2px] border-green-600"
+          src="./public/png/logo-no-background.png"
+          alt="Itemize-logo"
+          srcset=""
+        />
+        <div
+          id="icon"
+          class="w-7 h-5 flex flex-col gap-[5px] lg:hidden mt-6 mx-3"
+        >
+          <span class="w-full h-[3px] rounded-[10px] bg-purple-950"></span>
+          <span class="w-full h-[3px] rounded-[10px] bg-white"></span>
+          <span class="w-full h-[3px] rounded-[10px] bg-pink-950"></span>
+        </div>
+        <ul
+          class="lg:flex gap-7 px-10 pt-10 text-white font-serif font-extrabold hidden"
+        >
+          <li
+            class="hover:scale-[.7] duration-500 bg-slate-700 py-3 px-5 text-white font-bold text-[1.3rem] rounded-[6px]"
+          >
+            <a href="./index.html">HOME</a>
+          </li>
+          <li
+            class="hover:scale-[.7] duration-500 bg-slate-700 py-3 px-5 text-white font-bold text-[1.3rem] rounded-[6px]"
+          >
+            <a href="./index.html">MUSIC</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- -----------------------------------------MOBILE VIEW-------------------------- -->
+
+      <div
+        id="content"
+        class="bg-gradient-to-r from-green-950 to-green-400 fixed w-screen hidden h-full backdrop-blur-sm"
+      >
+        <ul
+          class="lg:flex px-10 pt-10 text-white font-serif font-extrabold flex flex-col gap-16"
+        >
+          <li
+            class="hover:scale-[.7] duration-500 bg-slate-700 py-3 px-5 text-white font-bold text-[1.3rem] rounded-[6px]"
+          >
+            <a href="./index.html">HOME</a>
+          </li>
+          <li
+            class="hover:scale-[.7] duration-500 bg-slate-700 py-3 px-5 text-white font-bold text-[1.3rem] rounded-[6px]"
+          >
+            <a href="./index.html">MUSIC</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="bg-gradient-to-tr from-green-950 to-green-600">
+      <div id="music"></div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
