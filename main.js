@@ -5,6 +5,7 @@ let add = document.querySelector("#content");
 let menu = document.querySelector("#icon");
 menu.addEventListener("click", () => {
   add.classList.toggle("hidden");
+  close.classList.toggle("hidden");
 });
 
 const root = document.querySelector("#music");
@@ -21,7 +22,7 @@ const fetchmusic = async () => {
     <img loading=lazy class="h-[250px] md:h-auto " src="${
       music.trackMetadata.displayImageUri
     }"/>
-    <div  class="lg:px-[25%]">
+    <div  class="lg:px-[25%] hidden lg:grid md:grid">
     <p class="text-[30px]"><span class="text-[30px] font-bold text-red-950">ARTIST :</span> ${music.trackMetadata.artists.map(
       (artist) => artist.name
     )}</p>
